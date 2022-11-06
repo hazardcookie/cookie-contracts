@@ -19,7 +19,7 @@ const main = async () => {
     }
   }
 
-  if (!config.PancakeRouter[networkName] || config.PancakeRouter[networkName] === ethers.constants.AddressZero) {
+  if (!config.CookieRouter[networkName] || config.CookieRouter[networkName] === ethers.constants.AddressZero) {
     throw new Error("Missing router address, refer to README 'Deployment' section");
   }
 
@@ -29,20 +29,20 @@ const main = async () => {
 
   console.log("Deploying to network:", networkName);
 
-  // Deploy PancakeZapV1
-  console.log("Deploying PancakeZap V1..");
+  // Deploy CookieZapV1
+  console.log("Deploying CookieZap V1..");
 
-  const PancakeZapV1 = await ethers.getContractFactory("PancakeZapV1");
+  const CookieZapV1 = await ethers.getContractFactory("CookieZapV1");
 
-  const pancakeZap = await PancakeZapV1.deploy(
+  const cookieZap = await CookieZapV1.deploy(
     config.WBNB[networkName],
-    config.PancakeRouter[networkName],
+    config.CookieRouter[networkName],
     config.MaxZapReverseRatio[networkName]
   );
 
-  await pancakeZap.deployed();
+  await cookieZap.deployed();
 
-  console.log("PancakeZap V1 deployed to:", pancakeZap.address);
+  console.log("CookieZap V1 deployed to:", cookieZap.address);
 };
 
 main()
