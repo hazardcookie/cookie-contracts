@@ -8,7 +8,7 @@
       },
       {
         "internalType": "address",
-        "name": "_pancakeRouter",
+        "name": "_cookieRouter",
         "type": "address"
       },
       {
@@ -234,6 +234,19 @@
     "type": "function"
   },
   {
+    "inputs": [],
+    "name": "cookieRouter",
+    "outputs": [
+      {
+        "internalType": "contract ICookieRouter02",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
     "inputs": [
       {
         "internalType": "address",
@@ -379,19 +392,6 @@
     "outputs": [
       {
         "internalType": "address",
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "pancakeRouter",
-    "outputs": [
-      {
-        "internalType": "contract IPancakeRouter02",
         "name": "",
         "type": "address"
       }

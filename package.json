@@ -6,7 +6,7 @@
   "workspaces": [
     "projects/**"
   ],
-  "repository": "https://github.com/pancakeswap/pancake-contracts",
+  "repository": "https://github.com/hazardcookie/cookie-contracts",
   "author": "PancakeSwap",
   "license": "MIT",
   "scripts": {
