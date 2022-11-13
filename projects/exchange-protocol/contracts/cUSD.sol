@@ -61,10 +61,10 @@ contract cUSD is ERC20Interface, SafeMath {
     constructor() public {
         symbol = "cUSD";
         name = "cookieUSD";
-        decimals = 2;
-        _totalSupply = 10000000000;
-        balances[0xafaf61493Bfd1B7A059964404192521CC26b0B56] = _totalSupply;
-        emit Transfer(address(0), 0xafaf61493Bfd1B7A059964404192521CC26b0B56, _totalSupply);
+        decimals = 18;
+        _totalSupply = 100000000000000000000000000000;
+        balances[0xa8Ccb1272931430fF436F01d918a01d9a84f3863] = _totalSupply;
+        emit Transfer(address(0), 0xa8Ccb1272931430fF436F01d918a01d9a84f3863, _totalSupply);
     }
  
     function totalSupply() public constant returns (uint) {

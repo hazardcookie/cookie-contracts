@@ -49,7 +49,7 @@ contract ApproveAndCallFallBack {
  
 //Actual token contract
  
-contract ufo is ERC20Interface, SafeMath {
+contract lol is ERC20Interface, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -59,12 +59,12 @@ contract ufo is ERC20Interface, SafeMath {
     mapping(address => mapping(address => uint)) allowed;
  
     constructor() public {
-        symbol = "UFO";
-        name = "UFO Token";
-        decimals = 2;
-        _totalSupply = 420000;
-        balances[0xafaf61493Bfd1B7A059964404192521CC26b0B56] = _totalSupply;
-        emit Transfer(address(0), 0xafaf61493Bfd1B7A059964404192521CC26b0B56, _totalSupply);
+        symbol = "LOL";
+        name = "LOL Token";
+        decimals = 18;
+        _totalSupply = 420690000000000000000000000;
+        balances[0xa8Ccb1272931430fF436F01d918a01d9a84f3863] = _totalSupply;
+        emit Transfer(address(0), 0xa8Ccb1272931430fF436F01d918a01d9a84f3863, _totalSupply);
     }
  
     function totalSupply() public constant returns (uint) {

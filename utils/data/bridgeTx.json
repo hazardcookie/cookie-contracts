@@ -1,0 +1,72 @@
+{
+  "id": 7,
+  "result": {
+    "Account": "rBweJrS9B1ni3Z5SUb5QiRemCPfnUKLWs9",
+    "Amount": "950000000",
+    "Destination": "radjmEZTb4zsyNUJGV4gcVPXrFTJAuskKa",
+    "Fee": "12",
+    "Flags": 0,
+    "LastLedgerSequence": 23422977,
+    "Memos": [
+      {
+        "Memo": {
+          "MemoData": "307862354145353030423039413465613439333536433444663333306431644264313562413932354637"
+        }
+      }
+    ],
+    "Sequence": 23422533,
+    "SigningPubKey": "03F790A7C7B441CFE264A51F6748F693EEAB29C78CB3FFCEF3225928BA3661C3CF",
+    "TransactionType": "Payment",
+    "TxnSignature": "3045022100D2E893073689C55372346BC84F6AACE9E54FAA15187CFB6AB4776BF1EE08C6B6022076D4F348AEE613FBC42738F2EAC4DA41D5BD82F448BC6C2074B4F18998193E40",
+    "date": 721626933,
+    "hash": "DF205E98EF8A21C1807DED1333C94191E3D7BB98F657D4C0F580C4589EFE133F",
+    "inLedger": 23422959,
+    "ledger_index": 23422959,
+    "meta": {
+      "AffectedNodes": [
+        {
+          "ModifiedNode": {
+            "FinalFields": {
+              "Account": "rBweJrS9B1ni3Z5SUb5QiRemCPfnUKLWs9",
+              "Balance": "49999988",
+              "Flags": 0,
+              "OwnerCount": 0,
+              "Sequence": 23422534
+            },
+            "LedgerEntryType": "AccountRoot",
+            "LedgerIndex": "9E1F67B24C43255CCBFC5F150A56CADA9834D357775ECC43617F9D775B40E676",
+            "PreviousFields": {
+              "Balance": "1000000000",
+              "Sequence": 23422533
+            },
+            "PreviousTxnID": "1AE0FC1BBFBCB43CDE2CC3BE14C132DC7F74259934B3D9966B1918859D5F13BD",
+            "PreviousTxnLgrSeq": 23422533
+          }
+        },
+        {
+          "ModifiedNode": {
+            "FinalFields": {
+              "Account": "radjmEZTb4zsyNUJGV4gcVPXrFTJAuskKa",
+              "Balance": "27038929022",
+              "Flags": 0,
+              "OwnerCount": 0,
+              "Sequence": 21549799
+            },
+            "LedgerEntryType": "AccountRoot",
+            "LedgerIndex": "F14BDD2602C850917A8FC2C34918D34F07AC7252FC4BE8C162ED9B21C7F36C68",
+            "PreviousFields": {
+              "Balance": "26088929022"
+            },
+            "PreviousTxnID": "0C059ADF9DBFD27CF0E944971E987F59409576EA7E5DB7E8F3CCB1E42959446E",
+            "PreviousTxnLgrSeq": 23389197
+          }
+        }
+      ],
+      "TransactionIndex": 0,
+      "TransactionResult": "tesSUCCESS",
+      "delivered_amount": "950000000"
+    },
+    "validated": true
+  },
+  "type": "response"
+}
