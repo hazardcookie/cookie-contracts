@@ -9,10 +9,11 @@ async function main() {
     console.log(`Account balance: ${await deployer.getBalance().toString()}`);
 
 
-    const factory = "0x3738f09F9f6829402b4CFbaC497c595C2d4e0fC8"
-    const wXRP = "0x05a7B99A9e766e066ECF318447D31717f30721c8"
-    const CookiePair = await ethers.getContractFactory("CookieRouter01");
-    const cookiePair = await CookiePair.deploy(factory, wXRP);
+    const factory = "0xc9c39D86C4dC749172a94A5543ae3c02B8402d6B"
+    const wXRP = "0xd3009Cc3f9BFdFE79DeE6cfdA8411c882ffaC6A9"
+    const wallet = "0xBc416004c100C3f889e0d4ecAC6C94F095021dcA"
+    const CookiePair = await ethers.getContractFactory("brick");
+    const cookiePair = await CookiePair.deploy();
 
     console.log(`Token address: ${cookiePair.address}`);
 }

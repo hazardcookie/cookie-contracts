@@ -63,8 +63,8 @@ contract lol is ERC20Interface, SafeMath {
         name = "LOL Token";
         decimals = 18;
         _totalSupply = 420690000000000000000000000;
-        balances[0xa8Ccb1272931430fF436F01d918a01d9a84f3863] = _totalSupply;
-        emit Transfer(address(0), 0xa8Ccb1272931430fF436F01d918a01d9a84f3863, _totalSupply);
+        balances[0xBc416004c100C3f889e0d4ecAC6C94F095021dcA] = _totalSupply;
+        emit Transfer(address(0), 0xBc416004c100C3f889e0d4ecAC6C94F095021dcA, _totalSupply);
     }
  
     function totalSupply() public constant returns (uint) {

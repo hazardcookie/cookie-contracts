@@ -33,3 +33,4 @@ bsc-library
 Flatten*
 
 .idea
+utils/data/wallets.json

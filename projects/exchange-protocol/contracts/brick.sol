@@ -49,7 +49,7 @@ contract ApproveAndCallFallBack {
  
 //Actual token contract
  
-contract cUSD is ERC20Interface, SafeMath {
+contract brick is ERC20Interface, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -59,12 +59,12 @@ contract cUSD is ERC20Interface, SafeMath {
     mapping(address => mapping(address => uint)) allowed;
  
     constructor() public {
-        symbol = "cUSD";
-        name = "cookieUSD";
+        symbol = "BRICK";
+        name = "BRICK Token";
         decimals = 18;
-        _totalSupply = 100000000000000000000000000000;
+        _totalSupply = 420690000000000000000000000;
         balances[0xBc416004c100C3f889e0d4ecAC6C94F095021dcA] = _totalSupply;
-        emit Transfer(address(0),0xBc416004c100C3f889e0d4ecAC6C94F095021dcA, _totalSupply);
+        emit Transfer(address(0), 0xBc416004c100C3f889e0d4ecAC6C94F095021dcA, _totalSupply);
     }
  
     function totalSupply() public constant returns (uint) {

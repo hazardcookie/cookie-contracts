@@ -28,7 +28,7 @@ async function signSubmitAndWait(transaction, wallet) {
 // Locates seed by searching for wallet name in ./data/wallets.json
 async function loadWalletByName(name) {
     try {
-        const walletLoad = fs.readFileSync('./data/wallets.json');
+        const walletLoad = fs.readFileSync('./utils/data/wallets.json');
         const Wallet = JSON.parse(walletLoad);
         const loadWalletFromSeed = xrpl.Wallet.fromSeed(Wallet[name].secret)
         

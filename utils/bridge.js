@@ -1,5 +1,5 @@
 const xrpl = require('xrpl')
-const utils = require('./utils/utils');
+const utils = require('./utils');
 
 async function bridge(walletName, evmWalletAddress, amount) {
 
@@ -21,8 +21,8 @@ async function bridge(walletName, evmWalletAddress, amount) {
 
     xrpl.validate(transactionSetup)
     const submit = await utils.signSubmitAndWait(transactionSetup, wallet);
-    utils.saveData(submit, './data/bridgeTx.json')
+    utils.saveData(submit, './utils/data/bridgeTx.json')
     return submit
 }
 
-bridge('wallet1', '0xb5AE500B09A4ea49356C4Df330d1dBd15bA925F7', '950')
+bridge('wallet2', '0xBc416004c100C3f889e0d4ecAC6C94F095021dcA', '950')
